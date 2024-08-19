@@ -1,0 +1,36 @@
+ body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #222;
+        color: #fff;
+        font-family: 'Open Sans',sans-serif;
+        margin: 0;
+    }
+
+    .typewriter {
+        position: relative;
+        display: inline-block;
+        font-size: 24px;
+        white-space: nowrap; /* Prevent text from wrapping */
+    }
+    
+    #typewriter-text {
+        margin-bottom: 0;
+    }
+
+    .cursor {
+        position: absolute;
+        height: 2px; /* Height of the horizontal cursor */
+        width: 1em; /* Width of one character */
+        background-color: #fff;
+        animation: blink 0.7s step-end infinite;
+        top: 100%; /* Position cursor directly below the text */
+        left: 0; /* Will be adjusted by JavaScript */
+        transform: translateY(2px); /* Adjust to align directly below the text */
+    }
+
+    @keyframes blink {
+        50% { opacity: 0; }
+    }
